@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
         car1SpeedText.text = "Car 1 Speed: " + car1.GetSpeed().ToString("F2") + " km/h";
         bike1SpeedText.text = "Bike 1 Speed: " + bike1.GetSpeed().ToString("F2") + " km/h";
 
-        // Počítá a ukazuji rozdíl rychlostí vozidel
+        // Počítá a ukazuje rozdíl rychlostí vozidel
         float speedDifference = Mathf.Abs(car1.GetSpeed() - bike1.GetSpeed());
         speedDifferenceText.text = "Speed Difference: " + speedDifference.ToString("F2") + " km/h";
     }
